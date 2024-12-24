@@ -1,0 +1,255 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fdf1f4; /* Fondo general rosado suave */
+}
+
+/* Header */
+header {
+    background-color: #ff577f; /* Fondo rosa fuerte */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+/* Navbar */
+.navbar-black {
+    background-color: #ff577f; /* Fondo rosado fuerte */
+}
+
+.navbar-black .navbar-nav .nav-link {
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar-black .navbar-nav .nav-link:hover {
+    color: #ffd1dc; /* Rosa claro al pasar el mouse */
+}
+
+.navbar-toggler {
+    border-color: #fff; /* Color del botón de toggler en vista móvil */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #ffd1dc; /* Efecto hover en la marca */
+}
+
+/* Background for Main Section */
+main {
+    background: linear-gradient(135deg, #ffe4e9, #fbd3e0); /* Gradiente rosado claro */
+    padding: 40px;
+}
+
+/* Products Section */
+#productos {
+    padding: 40px;
+}
+
+#productos h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #ff577f; /* Rosa fuerte */
+}
+
+/* Product Cards using Flexbox */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ffd1dc; /* Borde rosa claro */
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    min-height: 350px; /* Altura mínima uniforme */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 87, 127, 0.1); /* Sombra suave rosa */
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px; /* Altura fija para todas las imágenes */
+    object-fit: contain; /* Ajusta la imagen sin cortar */
+    border-radius: 4px;
+}
+
+/* Botón "Comprar" en las tarjetas */
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #ff577f;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: auto; /* Alinea el botón al fondo de la tarjeta */
+}
+
+.add-to-cart:hover {
+    background-color: #e04770; /* Rosa más oscuro */
+}
+
+/* Reseñas Section using Grid */
+#resenas {
+    padding: 40px;
+    background-color: #ffe4e9; /* Fondo rosado claro */
+}
+
+#resenas h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #ff577f;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.review-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Section */
+#contacto {
+    padding: 40px;
+    background-color: #ffe4e9; /* Fondo rosado claro */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #ff577f; /* Texto rosa fuerte */
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    transition: transform 0.2s;
+    background-color: #ff577f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #e04770;
+}
+
+/* Footer */
+footer {
+    background-color: #ff577f; /* Fondo rosa fuerte */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* Responsive Product Grid */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#finalizar-compra {
+    display: block;
+    margin: 20px auto; /* Centra horizontalmente */
+    padding: 10px 30px;
+    width: 50%; /* Tamaño adaptable al 50% del contenedor */
+    max-width: 200px; /* Limita el ancho */
+}
+#clima {
+    font-size: 14px;
+    color: #555;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#clima h4 {
+    font-size: 14px;
+    display: inline;
+    margin-right: 10px;
+}
